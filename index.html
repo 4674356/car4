@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA カーレース</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon.svg">
+    <meta name="theme-color" content="#333"/>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-container">
+            <div id="score">スコア: 0</div>
+            <div id="highScore">ハイスコア: 0</div>
+        </div>
+        <div id="start-screen">
+            <h1>PWA カーレース</h1>
+            <p>矢印キー（◀ ▶）または画面タップで車を操作</p>
+            <button id="startButton">スタート</button>
+        </div>
+        <div id="game-over-screen" style="display: none;">
+            <h2>ゲームオーバー</h2>
+            <p id="finalScore"></p>
+            <button id="restartButton">もう一度プレイ</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
